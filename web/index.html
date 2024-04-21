@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="UberEats">
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Website title</title>
+  <meta name="keywords" content="Header for the website">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #wm-loading-animation {
+        opacity: 0;
+        animation: fadeInOut 1.5s infinite alternate;
+    }
+    .hide-animation {
+      opacity: 1;
+      transition: hideAnimation 1s forwards;
+    }
+    .logo {
+      width: 250px;
+      height: auto;
+      display: block;
+      margin-bottom: 250px;
+    }
+    @keyframes fadeInOut {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+    }
+    @keyframes hideAnimation {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <script>
+    (function() {
+      // Ensure that the script runs after the DOM has loaded.
+      document.addEventListener("DOMContentLoaded", function() {
+        // Get the loading animation element by ID.
+        var loadingAnimation = document.getElementById("wm-loading-animation");
+
+        // Set a timer to hide the loading animation after 2 seconds (2000 milliseconds).
+        var timer = setTimeout(function() {
+          loadingAnimation.classList.add("hide-animation");
+        }, 2000);
+
+        // Check if the page has finished loading.
+        if (document.readyState === "complete") {
+          // If the page has finished loading, clear the timer.
+          clearTimeout(timer);
+          // Hide the loading animation immediately.
+          loadingAnimation.classList.add("hide-animation");
+        } else {
+          // If the page has not finished loading, wait for it to load.
+          window.addEventListener("load", function() {
+            // Once the page has finished loading, clear the timer.
+            clearTimeout(timer);
+            // Hide the loading animation immediately.
+            loadingAnimation.classList.add("hide-animation");
+          });
+        }
+      });
+    })();
+  </script>
+</head>
+<body>
+      <div class="main-content" id="wm-loading-animation">
+          <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+      </div>
+</body>
+</html>
+
+  <meta name="robots" content="noindex" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Open Graph & SEO tags -->
+  <meta property="og:title" content="UberEats" />
+  <meta property="og:description" content="Built with FlutterFlow." />
+  <meta property="og:image" content="https://storage.googleapis.com/flutterflow-prod-hosting/og_splash_gradient.png" /> 
+  <meta name="twitter:title" content="UberEats" />
+  <meta name="twitter:description" content="Built with FlutterFlow." />
+  <meta name="twitter:image" content="https://storage.googleapis.com/flutterflow-prod-hosting/og_splash_gradient.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <title> UberEats </title>
+  <meta name="description" content="Built with FlutterFlow." />
+    
+
+  <!-- Status Bar color in Safari browser (iOS) and PWA -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f1f4f8">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#f1f4f8">
+
+  <link rel="manifest" href="manifest.json">
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    var serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  
+  
+  
+  <script src="https://js.stripe.com/v3/"></script>
+  
+  <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        entrypointUrl: 'main.dart.js',
+        serviceWorker: {
+          serviceWorkerUrl: 'flutter_service_worker.js?v=',
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: async function(engineInitializer) {
+          // Initialize the Flutter engine
+          let appRunner = await engineInitializer.initializeEngine({});
+          // Run the app
+          await appRunner.runApp();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

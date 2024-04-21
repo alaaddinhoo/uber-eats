@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>555563231287-0qdb8rs3fi9pm79lp32erghikf3a21bs.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.555563231287-0qdb8rs3fi9pm79lp32erghikf3a21bs</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>555563231287-1vse7ttmo6aqp8rmukk1ciav5uqik335.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDIA2Ro2A46hA4W3UWufHNsDm-VZ3L24_k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>555563231287</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mycompany.ubereats</string>
+	<key>PROJECT_ID</key>
+	<string>ubereats-234aa</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ubereats-234aa.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:555563231287:ios:1b40be9333d7b013a977b2</string>
+</dict>
+</plist>

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "555563231287",
+    "project_id": "ubereats-234aa",
+    "storage_bucket": "ubereats-234aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555563231287:android:fddcc7360d03dde8a977b2",
+        "android_client_info": {
+          "package_name": "com.mycompany.ubereats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555563231287-1vse7ttmo6aqp8rmukk1ciav5uqik335.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.ubereats",
+            "certificate_hash": "60d3ea391f80a2d4d27c55467ad31e0a319d2c57"
+          }
+        },
+        {
+          "client_id": "555563231287-p45fi6sqs7u1dku6cgdr27629q3eg08a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoDzKOlHS-enrp26wpNMrALue8QRPv8QM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555563231287-p45fi6sqs7u1dku6cgdr27629q3eg08a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "555563231287-0qdb8rs3fi9pm79lp32erghikf3a21bs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.ubereats"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
